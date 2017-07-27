@@ -1,5 +1,6 @@
 # twemoji-everywhere
-Convert unicode emoji to images on all webpages
+Convert unicode emoji to twemoji images on all webpages.
+This webextension is basically a multiprocess compatible version of emoji-everywhere by Rudloff.
 
 ## License
 This addon is released under the [GPL 3](https://www.gnu.org/licenses/gpl-3.0.en.html) license.
