@@ -1,0 +1,27 @@
+{
+
+  "manifest_version": 2,
+  "name": "Twemoji Everywhere",
+  "version": "1.0",
+  
+  "author": "Schrikvis",
+
+  "description": "Convert unicode emoji to twemoji images on all webpages.",
+  
+  "icons": {
+    "48": "icons/emoji-48.png",
+	"96": "icons/emoji-96.png"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+	    "js/twemoji.min.js",
+	    "js/emoji.js"
+	  ],
+	  "css": ["css/emoji.css"]
+    }
+  ]
+  
+}
