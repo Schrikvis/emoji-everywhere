@@ -1,4 +1,4 @@
-# emoji-everywhere
+# twemoji-everywhere
 Convert unicode emoji to images on all webpages
 
 ## License
