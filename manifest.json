@@ -1,12 +1,27 @@
 {
 
   "manifest_version": 2,
-  "name": "Twemoji Everywhere",
-  "version": "1.0.1",
+  "name": "emoji-everywhere",
+  "version": "0.1.5-beta",
   
-  "author": "Schrikvis",
+  "author": "Pierre Rudloff <contact@rudloff.pro>",
+  "bugs": "https://github.com/Rudloff/emoji-everywhere/issues",
+  "devDependencies": {
+    "grunt": "~1.0.0",
+    "grunt-contrib-csslint": "~1.0.0",
+    "grunt-fixpack": "~0.1.0",
+    "grunt-jslint": "~1.1.14",
+    "grunt-jsonlint": "~1.1.0"
+  },
 
-  "description": "Convert unicode emoji to twemoji images on all webpages.",
+  "homepage": "https://addons.mozilla.org/fr/firefox/addon/emoji-everywhere/",
+  "keywords": [
+    "emoji",
+    "firefox",
+    "twemoji"
+  ],
+  
+  "description": "Convert unicode emoji to images on all webpages",
   
   "icons": {
     "48": "icons/emoji-48.png",
@@ -17,11 +32,18 @@
     {
       "matches": ["<all_urls>"],
       "js": [
-	    "js/twemoji.min.js",
+	    "data/js/twemoji.min.js",
 	    "js/emoji.js"
 	  ],
-	  "css": ["css/emoji.css"]
+	  "css": ["data/css/emoji.css"]
     }
   ]
+  
+  "license": "GPL-3.0",
+  "main": "js/emoji.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rudloff/emoji-everywhere.git"
+  },
   
 }
